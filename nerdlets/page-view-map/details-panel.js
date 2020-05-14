@@ -48,6 +48,40 @@ export default class DetailsPanel extends React.Component {
               iconType={Button.ICON_TYPE.INTERFACE__SIGN__TIMES__V_ALTERNATE}
             />
           </StackItem>
+          {/*}
+          <StackItem className="chart-stack-item">
+            <h5 className="chart-header">Purchase Cart Total</h5>
+            <LineChart
+              className="chartSection"
+              accountId={accountId}
+              query={`SELECT sum(PurchasedCartGrandTotal) FROM PageView WHERE appId = ${appId} ${
+                openedFacet.facet[0]
+                  ? ` WHERE regionCode = '${openedFacet.facet[0]}' `
+                  : ''
+              } ${
+                openedFacet.facet[1]
+                  ? ` WHERE countryCode = '${openedFacet.facet[1]}' `
+                  : ''
+              } ${createSinceQueryFragment(launcherUrlState)} TIMESERIES `}
+            />
+          </StackItem>
+          <StackItem className="chart-stack-item">
+            <h5 className="chart-header">Purchase Cart Items</h5>
+            <LineChart
+              className="chartSection"
+              accountId={accountId}
+              query={`SELECT sum(PurchasedCartItemsTotal) FROM PageView WHERE appId = ${appId} ${
+                openedFacet.facet[0]
+                  ? ` WHERE regionCode = '${openedFacet.facet[0]}' `
+                  : ''
+              } ${
+                openedFacet.facet[1]
+                  ? ` WHERE countryCode = '${openedFacet.facet[1]}' `
+                  : ''
+              } ${createSinceQueryFragment(launcherUrlState)} TIMESERIES `}
+            />
+          </StackItem>
+            {*/}
           <StackItem className="chart-stack-item">
             <h5 className="chart-header">Overall Duration</h5>
             <LineChart

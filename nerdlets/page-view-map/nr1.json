@@ -1,8 +1,8 @@
 {
     "schemaType": "NERDLET",
     "id": "page-view-map",
-    "description": "Page View Map",
-    "displayName": "Page View Map",
+    "description": "Page View Map-ddarwin",
+    "displayName": "Page View Map-ddarwin ",
     "entities": [{"domain": "BROWSER", "type": "APPLICATION"}],
     "actionCategory": "monitor"
 }
